@@ -1,4 +1,4 @@
-﻿using Laboratory3.Views;
+﻿using Laboratory3.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,17 +14,17 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Laboratory3
+namespace Laboratory3.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for PageView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PageView : UserControl
     {
-        public MainWindow()
+        public PageView()
         {
             InitializeComponent();
-            Content = new PageView();
+            DataContext = new PageViewModel();
         }
     }
 }
